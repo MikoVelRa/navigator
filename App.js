@@ -4,11 +4,13 @@ import {Navigation} from 'react-native-navigation';
 import Welcome from './screens/Welcome';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
+import FinalScreen from './screens/FinalScreen';
 
 //Registramos componentes del navegador
 Navigation.registerComponent('Welcome', () => Welcome);
 Navigation.registerComponent('SignIn', () => SignIn);
 Navigation.registerComponent('SignUp', () => SignUp);
+Navigation.registerComponent('FinalScreen', () => FinalScreen);
 
 //Aquí es donde definimos la raíz del navegador
 Navigation.events().registerAppLaunchedListener(() => {
